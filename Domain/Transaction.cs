@@ -11,6 +11,7 @@ public class Transaction
     public DateTime Date { get; set; }
     public string Note { get; set; }
 
+    public Transaction() { }
     public Transaction(decimal amount, TransactionType type, string categoryName, string note)
     {
         Id = Guid.NewGuid();
